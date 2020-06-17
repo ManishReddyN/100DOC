@@ -16,6 +16,6 @@ for i in range(2, l+1):
         c = 0
     if message[i-1] != '0':
         c = b
-    if (message[i-2] == '1' or message[i-2] == '2') and message[i-1] < '7':
+    if message[i-2] == '1' or (message[i-1] == '2' and message[i-1] < '7'):
         c += a
 print("Number Of Ways:", c)
